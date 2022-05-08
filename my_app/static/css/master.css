@@ -82,6 +82,7 @@ h1 {
   width: 160px;
   padding-top: 20px;
   margin-right: 20px;
+  box-shadow: 0px 3px 7px #666666;
 }
 
 
@@ -91,6 +92,7 @@ h1 {
   height: 140px;
   width: 160px;
   padding-top: 20px;
+  box-shadow: 0px 3px 7px #666666;
 }
 
 
@@ -116,20 +118,60 @@ h1 {
   padding: 10px;
   line-height: 50px;
   border-radius: 5px;
+  box-shadow: 0px 3px 7px #666666;
 
 }
 
 .work-job {
   background-color: #DBE2EF;
   padding: 10px;
-  border-radius: 5px;
+  border-radius: 15px;
   text-align: left;
+  border-color: #112D4E;
+  border: 2px;
+  border-style: solid;
 }
 
 .col-6 {
   margin: 0 auto;
   padding-top: 20px;
 }
+
+
+
+/*Work Form*/
+/*Work Form*/
+/*Work Form*/
+/*Work Form*/
+/*Work Form*/
+.form-container {
+  background-color: #DBE2EF;
+}
+
+input {
+  border-color: #112D4E;
+  border: 2px;
+  border-style: solid;
+  border-radius: 5px;
+
+}
+
+.form-control {
+  border-color: #112D4E;
+  border: 2px;
+  border-style: solid;
+  border-radius: 5px;
+
+}
+
+textarea {
+  border-color: #112D4E;
+  border: 2px;
+  border-style: solid;
+  border-radius: 5px;
+}
+
+.dropdown_arrow {}
 
 /*Housing*/
 /*Housing*/
@@ -144,9 +186,18 @@ h1 {
   border-radius: 5px;
 }
 
+.select_comune {
+  width: 150px;
+}
+
 .house-price-textbox {
   height: 50%;
   width: 50%;
+}
+
+.house_sections {
+  text-align: left;
+  color: #112D4E;
 }
 
 /* Buttons*/
@@ -155,6 +206,7 @@ h1 {
 /* Buttons*/
 /* Buttons*/
 /* Buttons*/
+
 a:link {
   color: #112D4E;
   background-color: transparent;
@@ -172,6 +224,34 @@ a:hover {
   background-color: transparent;
   text-decoration: underline;
 }
+
+.crie_vaga {
+  background-color: #3F72AF;
+  padding: 10px;
+  border-radius: 15px;
+  text-align: left;
+  font-weight: bold;
+  border-color: #DBE2EF;
+  border: 2px;
+  border-style: solid;
+  cursor: pointer;
+  transition-duration: 0.4s;
+  box-shadow: 0px 3px 7px #666666;
+}
+
+.crie_vaga:hover {
+  background-color: #DBE2EF;
+  padding: 10px;
+  border-radius: 15px;
+  text-align: left;
+  font-weight: bold;
+  border-color: #112D4E;
+  border: 2px;
+  border-style: solid;
+  cursor: pointer;
+  box-shadow: 0px 3px 7px #666666;
+}
+
 
 /*Footer*/
 
