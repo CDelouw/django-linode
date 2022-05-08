@@ -1,8 +1,7 @@
 from django.urls import reverse_lazy
-from django.http.response import HttpResponseRedirect
-from django.views.generic import TemplateView, FormView, CreateView, ListView
-from .forms import *
+from django.views.generic import TemplateView, CreateView
 from .models import WorkModel
+from .forms import *
 
 
 class IndexView(TemplateView):
@@ -18,41 +17,49 @@ class WorkView(TemplateView):
     context_object_name = 'jobs'
 
 
-class WorkCreateView(CreateView):
-    # model = WorkModel
-    template_name = 'my_app/work_form.html'
-    form_class = Work
-    success_url = reverse_lazy('my_app:success')
-
-    def form_valid(self, form):
-        return super().form_valid(form)
-
-
-# class WorkFormView(FormView):
-#     form_class = Work
-#     template_name = 'my_app/work_form.html'
-#
-#     success_url = reverse_lazy('my_app:success')
-#
-#     def form_valid(self, form):
-#         return super().form_valid(form)
-#         # if request.method == 'POST':
-#         #     if form.is_valid():
-#         #         form.type_job = type_job_value
-#         #         form.save()
-#         #         return HttpResponseRedirect(reverse('my_app:success-page'))
-#         # else:
-#         #     form = form_model
-#         # return render(request, 'my_app/work_form.html', context={'form': form})
-
-
-class Construction(TemplateView):
-    # all_jobs = WorkModel.objects.all()
+class WorkConstructionView(TemplateView):
     template_name = 'my_app/work/construction.html'
-    # context = {'jobs': all_jobs}
-#
-#     @staticmethod
-#     def cleaning(request):
-#         all_jobs = models.WorkModel.objects.all()
-#         return render(request, 'my_app/work/cleaning.html', context={'jobs': all_jobs})
-#
+
+    def get_context_data(self, **kwargs):
+        context = super().get_context_data(**kwargs)
+        context['jobs'] = WorkModel.objects.filter(type_job=1)
+        return context
+
+
+class WorkCleaningView(TemplateView):
+    template_name = 'my_app/work/cleaning.html'
+
+    def get_context_data(self, **kwargs):
+        context = super().get_context_data(**kwargs)
+        context['jobs'] = WorkModel.objects.filter(type_job=2)
+        return context
+
+
+class WorkOtherView(TemplateView):
+    template_name = 'my_app/work/outros.html'
+
+    def get_context_data(self, **kwargs):
+        context = super().get_context_data(**kwargs)
+        context['jobs'] = WorkModel.objects.filter(type_job=3)
+        return context
+
+
+class WorkConstructionCreateView(CreateView):
+    model = WorkModel
+    template_name = 'my_app/work_form.html'
+    form_class = WorkConstructionForm
+    success_url = reverse_lazy('my_app:success-page')
+
+
+class WorkCleaningCreateView(CreateView):
+    model = WorkModel
+    template_name = 'my_app/work_form.html'
+    form_class = WorkCleaningForm
+    success_url = reverse_lazy('my_app:success-page')
+
+
+class WorkOtherCreateView(CreateView):
+    model = WorkModel
+    template_name = 'my_app/work_form.html'
+    form_class = WorkOtherForm
+    success_url = reverse_lazy('my_app:success-page')

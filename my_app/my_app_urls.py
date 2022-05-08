@@ -7,7 +7,10 @@ urlpatterns = [
     path('', IndexView.as_view(), name='index-page'),
     path('success/', SuccessView.as_view(), name='success-page'),
     path('work/', WorkView.as_view(), name='work-page'),
-    path('work/form/', WorkCreateView.as_view(), name='work-form-page'),
-    path('work/construction/', Construction.as_view(), name='work-construction'),
-    # path('work/construction/', views.WorkView.cleaning, name='work-cleaning'),
+    path('work/construction/', WorkConstructionView.as_view(), name='work-construction-page'),
+    path('work/cleaning/', WorkCleaningView.as_view(), name='work-cleaning-page'),
+    path('work/other/', WorkOtherView.as_view(), name='work-other-page'),
+    path('work/construction/form/', WorkConstructionCreateView.as_view(), name='work-construction-form-page'),
+    path('work/cleaning/form/', WorkCleaningCreateView.as_view(), name='work-cleaning-form-page'),
+    path('work/other/form/', WorkOtherCreateView.as_view(), name='work-other-form-page'),
 ]

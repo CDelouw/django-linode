@@ -3,26 +3,29 @@
 
 {% block logo %}
 
-    <h2><b>Cria sua vaga</b></h2><br><br>
+    <h2><b>Crie sua vaga</b></h2><br><br>
 
     <form method="POST">
         {% csrf_token %}
         <h5>Nome</h5>
         {{ form.name }}<br><br>
 
-        <h5>Profissao</h5>
-        {{ form.profession }}<br><br>
+        <h5>Profissão</h5>
+        {{ form.profession }}
+        <p hidden>{{ form.type_job }}</p><br><br>
 
-        <h5>Salario por hora</h5>
+        <h5>Salário por hora</h5>
         {{ form.salary }}<br><br>
+        <b>{{ form.salary.errors }}</b>
 
-        <h5>Linguas</h5>
-        {{ form.language_french }}Frances<br>
-        {{ form.language_english }}Inglês<br>
-        {{ form.language_dutch }}Neerlandes<br><br>
-
-        <h5>Permissão para dirigir</h5>
-        {{ form.drivers_license }}<br><br>
+{#        Comment at first moment to let the form as simple as possible#}
+{#        <h5>Línguas</h5>#}
+{#        {{ form.language_french }}Frances<br>#}
+{#        {{ form.language_english }}Inglês<br>#}
+{#        {{ form.language_dutch }}Neerlandes<br><br>#}
+{##}
+{#        <h5>Permissão para dirigir</h5>#}
+{#        {{ form.drivers_license }}<br><br>#}
 
         <h5>Contato</h5>
         {{ form.contact }}<br><br>

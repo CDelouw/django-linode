@@ -95,10 +95,13 @@ footer {
 /*Work*/
 /*Work*/
 .work-table-row {
-  background-color: #D8D2CB;
+  background-color: #3F72AF;
+  color: #F9F7F7;
+  font-weight: bold;
   padding: 10px;
   line-height: 50px;
   border-radius: 5px;
+
 }
 
 .work-job {
@@ -106,6 +109,11 @@ footer {
   padding: 10px;
   border-radius: 5px;
   text-align: left;
+}
+
+.col-6 {
+  margin: 0 auto;
+  padding-top: 20px;
 }
 
 /*Housing*/

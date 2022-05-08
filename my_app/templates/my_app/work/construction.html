@@ -2,7 +2,7 @@
 {% load static %}
 
 {% block logo %}
-<h2><a href="{% url 'my_app:work-form-page' %}">Crie uma vaga aqui</a></h2>
+<h2><a href="{% url 'my_app:work-construction-form-page' %}">Crie uma vaga aqui</a></h2>
 <br><br>
 {##}
 {#  <h2><b>Destaques</b></h2>#}
@@ -19,8 +19,9 @@
             <div class="work-job">
                 <h4><b>{{ job.profession }}</b></h4>
                 Postado em {{ job.date }}
-                <div class="work-job-salary">€{{ job.salary }} a hora</div>
+                <div class="work-job-salary">€{{ job.salary|floatformat:2 }} a hora</div>
                 {{ job.name }} {{ job.contact }}
+                {{ job.description }}
         </div></div>
     </div>
     <br><br>
