@@ -32,6 +32,10 @@ p {
   width: 80%;
 }
 
+.col-5 {
+  padding-top: 15px;
+}
+
 /* Middle*/
 .middle-container {
   background-color: #DBE2EF;
@@ -41,6 +45,7 @@ p {
 
 .welcome {
   margin: auto;
+  font-weight: 550;
 }
 
 .hands-img {
@@ -63,9 +68,6 @@ p {
   margin-right: 20px;
 }
 
-.job-vector {
-  width: 40%;
-}
 
 .search-house {
   border-radius: 15px;
@@ -75,8 +77,15 @@ p {
   padding-top: 20px;
 }
 
-.house-vector {
-  width: 39%;
+
+
+/*Footer*/
+
+footer {
+  height: 50px;
+  width: 100%;
+  background-color: #3F72AF;
+  padding-top: 10px;
 }
 
 /*Work*/
