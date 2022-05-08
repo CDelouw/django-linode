@@ -7,6 +7,7 @@ urlpatterns = [
     path('', IndexView.as_view(), name='index-page'),
     path('success/', SuccessView.as_view(), name='success-page'),
     path('work/', WorkView.as_view(), name='work-page'),
+    path('house/', HouseView.as_view(), name='house-page'),
     path('work/construction/', WorkConstructionView.as_view(), name='work-construction-page'),
     path('work/cleaning/', WorkCleaningView.as_view(), name='work-cleaning-page'),
     path('work/other/', WorkOtherView.as_view(), name='work-other-page'),

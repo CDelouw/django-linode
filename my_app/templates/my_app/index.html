@@ -24,9 +24,10 @@
     <div class="logo">
 
       <a href="{% url 'my_app:index-page' %}">
-        <h1><b>Clube Imigrante</b></h1>
+        <!-- <h1><b>Clube Imigrante</b></h1>-->
+        <img class="logo-website-img" src="{% static 'images/Clube_Imigrante_logo.png' %}">
       </a>
-      <p>Ajudando brasileiros que moram na Belgica</p>
+      <p class="p_logo">Ajudando brasileiros que moram na Belgica</p>
 
       <br>
     </div>
@@ -55,7 +56,7 @@
           </svg>
         </div>
         <div class="col-5">
-          <a href="{% static 'html/housing.html' %}"> Moradia</a>
+          <a href="{% url 'my_app:house-page' %}"> Moradia</a>
         </div>
       </div>
 
@@ -140,7 +141,7 @@
     </div>
   </div>
   <br>
-  <h2>Comece sua busca</h2>
+  <h2 class="homepage_h2">Comece sua busca</h2>
 
   <div class="bottom-container">
     <table>
@@ -158,7 +159,7 @@
         </th>
         <th>
           <div class="search-house">
-            <a href="{% static 'html/housing.html' %}">
+            <a href="{% url 'my_app:house-page' %}">
               <svg xmlns="http://www.w3.org/2000/svg" height="48" width="48">
                 <path fill="#112D4E"
                   d="M34.85 16.85H37.85V13.85H34.85ZM34.85 25.4H37.85V22.4H34.85ZM34.85 33.9H37.85V30.9H34.85ZM32.05 42V39H43V9H23.25V14.6L20.25 12.5V6H46V42ZM2 42V22.5L15.55 12.8L29.05 22.5V42H18.2V31.95H12.9V42ZM5 39H9.9V28.95H21.2V39H26.05V24.05L15.55 16.5L5 24.05ZM32.05 20.75ZM21.2 39V28.95H9.9V39V28.95H15.55H21.2Z" />
@@ -174,7 +175,7 @@
 </body>
 
 <footer>
-  <p> © Copyright 2022 </p>
+  <p class="copyright"> © Copyright 2022 </p>
 
 </footer>
 
