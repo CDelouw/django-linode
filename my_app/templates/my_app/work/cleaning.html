@@ -2,11 +2,13 @@
 {% load static %}
 
 {% block logo %}
-<h2><a href="{% url 'my_app:work-cleaning-form-page' %}">Crie uma vaga aqui</a></h2>
-<br><br>
+<button class="button crie_vaga">
+    <a href="{% url 'my_app:work-construction-form-page' %}">Crie uma vaga aqui</a>
+</button>
+<br><br><br>
 {##}
-{#  <h2><b>Destaques</b></h2>#}
-{#  <br><br><br><br>#}
+{# <h2><b>Destaques</b></h2>#}
+{# <br><br><br><br>#}
 {##}
 
 <h2><b>Anuncios</b></h2>
@@ -14,17 +16,17 @@
 
 
 {% for job in jobs %}
-    <div class="row">
-        <div class="col-12 col-sm-12">
-            <div class="work-job">
-                <h4><b>{{ job.profession }}</b></h4>
-                Postado em {{ job.date }}
-                <div class="work-job-salary">€{{ job.salary }} a hora</div>
-                {{ job.name }} {{ job.contact }}
-        </div></div>
+<div class="row">
+    <div class="col-12 col-sm-12">
+        <div class="work-job">
+            <h4><b>{{ job.profession }}</b></h4>
+            Postado em {{ job.date }}
+            <div class="work-job-salary">€{{ job.salary }} a hora</div>
+            {{ job.name }} {{ job.contact }}
+        </div>
     </div>
-    <br><br>
+</div>
+<br><br>
 {% endfor %}
 
 {% endblock %}
-

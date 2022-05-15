@@ -1,0 +1,83 @@
+{% extends 'my_app/index.html' %}
+{% load static %}
+
+{% block logo %}
+<!-- ToDo: This must be transformed in Filters -->
+<form action="/html/house.html" method="post">
+  <div class="row">
+
+    <div class="col-6 col-sm-3">
+      <div class="house-table-row">
+        <label for="comune">
+          <h3><b>Comune</b></h3>
+        </label><br>
+        <select class="select_comune" name="comune">
+          <option name="">Anderlecht</option>
+          <option name="">Auderghem</option>
+          <option name="">Berchem-Sainte-Agathe</option>
+          <option name="">Ville de Bruxelles</option>
+          <option name="">Etterbeek</option>
+          <option name="">Evere</option>
+          <option name="">Forest</option>
+          <option name="">Ganshoren</option>
+          <option name="">Ixelles</option>
+          <option name="">Jette</option>
+          <option name="">Koekelberg</option>
+          <option name="">Molenbeek</option>
+          <option name="">Saint-Gilles</option>
+          <option name="">Saint-Josse-ten-Noode</option>
+          <option name="">Schaerbeek</option>
+          <option name="">Uccle</option>
+          <option name="">Watermael-Boitsfort</option>
+          <option name="">Woluwe-Saint-Lambert</option>
+          <option name="">Woluwe-Saint-Pierre</option>
+        </select>
+      </div>
+    </div><br><br><br><br>
+
+    <div class="col-6 col-sm-3">
+      <div class="house-table-row">
+        <label for="bedrooms">
+          <h3><b>Quartos</b></h3>
+        </label><br>
+        <input type="text" class="house-price-textbox" value="">
+      </div>
+    </div>
+
+    <div class="col-6 col-sm-3">
+      <div class="house-table-row">
+        <label for="price">
+          <h3><b>Preço até</b></h3>
+        </label><br>
+        <input type="text" class="house-price-textbox" value="">
+      </div>
+    </div>
+
+    <div class="col-6 col-sm-3">
+      <div class="house-table-row">
+        <label for="contract">
+          <h3><b>Contrato</b></h3>
+        </label><br>
+        <select name="contract">
+          <option name="">Sim</option>
+          <option name="">Não</option>
+        </select>
+      </div>
+    </div>
+  </div>
+</form>
+<br><br>
+
+
+
+<h2 class="house_sections"><b>Destaques</b></h2>
+<br><br><br><br>
+
+
+<h2 class="house_sections"><b>Anuncios</b></h2>
+<br><br><br><br>
+</div>
+</body>
+
+</html>
+{% endblock %}

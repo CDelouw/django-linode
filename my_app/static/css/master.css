@@ -11,9 +11,7 @@ h1 {
   font-size: 3rem;
 }
 
-p {
-  color: #112D4E;
-}
+
 
 
 /*Index*/
@@ -22,14 +20,29 @@ p {
 /*Index*/
 /*Index*/
 /* Top*/
+.logo-website-img {
+  width: 75%;
+  padding-bottom: 2px;
+}
+
+.p_logo {
+  color: #112D4E;
+}
+
 .top-container {
-  background-color: #F9F7F7;
+  background-color: "E5E5E5";
+  height: 50 px;
+
 }
 
 .table_of_content {
   margin: auto;
   font-size: 32px;
   width: 80%;
+}
+
+.col-5 {
+  padding-top: 15px;
 }
 
 /* Middle*/
@@ -41,6 +54,11 @@ p {
 
 .welcome {
   margin: auto;
+  font-weight: 550;
+}
+
+.welcome-text {
+  color: #112D4E;
 }
 
 .hands-img {
@@ -48,6 +66,9 @@ p {
 }
 
 /* Bottom*/
+.homepage_h2 {
+  text-align: center;
+}
 
 .bottom-container {
   width: 100%;
@@ -61,11 +82,9 @@ p {
   width: 160px;
   padding-top: 20px;
   margin-right: 20px;
+  box-shadow: 0px 3px 7px #666666;
 }
 
-.job-vector {
-  width: 40%;
-}
 
 .search-house {
   border-radius: 15px;
@@ -73,11 +92,12 @@ p {
   height: 140px;
   width: 160px;
   padding-top: 20px;
+  box-shadow: 0px 3px 7px #666666;
 }
 
-.house-vector {
-  width: 39%;
-}
+
+
+
 
 /*Work*/
 /*Work*/
@@ -85,19 +105,73 @@ p {
 /*Work*/
 /*Work*/
 /*Work*/
+
+.work_h2 {
+  color: #112D4E;
+  text-align: left;
+}
+
 .work-table-row {
-  background-color: #D8D2CB;
+  background-color: #3F72AF;
+  color: #F9F7F7;
+  font-weight: bold;
   padding: 10px;
   line-height: 50px;
   border-radius: 5px;
+  box-shadow: 0px 3px 7px #666666;
+
 }
 
 .work-job {
-  background-color: #D8D2CB;
+  background-color: #DBE2EF;
   padding: 10px;
-  border-radius: 5px;
+  border-radius: 15px;
   text-align: left;
+  border-color: #112D4E;
+  border: 2px;
+  border-style: solid;
 }
+
+.col-6 {
+  margin: 0 auto;
+  padding-top: 20px;
+}
+
+
+
+/*Work Form*/
+/*Work Form*/
+/*Work Form*/
+/*Work Form*/
+/*Work Form*/
+.form-container {
+  background-color: #DBE2EF;
+}
+
+input {
+  border-color: #112D4E;
+  border: 2px;
+  border-style: solid;
+  border-radius: 5px;
+
+}
+
+.form-control {
+  border-color: #112D4E;
+  border: 2px;
+  border-style: solid;
+  border-radius: 5px;
+
+}
+
+textarea {
+  border-color: #112D4E;
+  border: 2px;
+  border-style: solid;
+  border-radius: 5px;
+}
+
+.dropdown_arrow {}
 
 /*Housing*/
 /*Housing*/
@@ -105,9 +179,15 @@ p {
 /*Housing*/
 /*Housing*/
 .house-table-row {
-  background-color: #D8D2CB;
+  background-color: #DBE2EF;
   padding: 10px;
   border: 3px solid;
+  border-color: #112D4E;
+  border-radius: 5px;
+}
+
+.select_comune {
+  width: 150px;
 }
 
 .house-price-textbox {
@@ -115,12 +195,18 @@ p {
   width: 50%;
 }
 
+.house_sections {
+  text-align: left;
+  color: #112D4E;
+}
+
 /* Buttons*/
 /* Buttons*/
 /* Buttons*/
 /* Buttons*/
 /* Buttons*/
 /* Buttons*/
+
 a:link {
   color: #112D4E;
   background-color: transparent;
@@ -137,4 +223,45 @@ a:hover {
   color: blue;
   background-color: transparent;
   text-decoration: underline;
+}
+
+.crie_vaga {
+  background-color: #3F72AF;
+  padding: 10px;
+  border-radius: 15px;
+  text-align: left;
+  font-weight: bold;
+  border-color: #DBE2EF;
+  border: 2px;
+  border-style: solid;
+  cursor: pointer;
+  transition-duration: 0.4s;
+  box-shadow: 0px 3px 7px #666666;
+}
+
+.crie_vaga:hover {
+  background-color: #DBE2EF;
+  padding: 10px;
+  border-radius: 15px;
+  text-align: left;
+  font-weight: bold;
+  border-color: #112D4E;
+  border: 2px;
+  border-style: solid;
+  cursor: pointer;
+  box-shadow: 0px 3px 7px #666666;
+}
+
+
+/*Footer*/
+
+footer {
+  height: 50px;
+  width: 100%;
+  background-color: #3F72AF;
+  padding-top: 10px;
+}
+
+.copyright {
+  color: #F9F7F7;
 }
