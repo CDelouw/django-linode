@@ -17,11 +17,6 @@ class WorkView(TemplateView):
     context_object_name = 'jobs'
 
 
-class HouseView(TemplateView):
-    template_name = 'my_app/house.html'
-    context_object_name = 'houses'
-
-
 class WorkConstructionView(TemplateView):
     template_name = 'my_app/work/construction.html'
 
